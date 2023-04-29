@@ -1,95 +1,38 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import React from 'react';
+import Link from 'next/link';
+import  styles from './page.module.css';
 
-export default function Home() {
+/**
+ * Renders the page component
+ * @param {PageProps} props - The props for the page component
+ * @return {JSX.Element} The rendered page component
+ */
+
+interface HomePageProps {
+  // Define any props here
+}
+
+const HomePage = (): JSX.Element => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className={styles.container}>
+    <h1 className={styles.homeh1}>Welcome to my GitHub meta data</h1>
+    <div>
+    <ul className={styles.homeul}>
+      <li className={styles.card}><Link className= {styles.link} href="/"> Home</Link></li>
+      <li className={styles.card}><Link className= {styles.link} href="/about"> About</Link></li>
+      <li className={styles.card}><Link className= {styles.link} href="/projects">Projects</Link></li>
+      <li className={styles.card}><Link className= {styles.link} href="/projects/team">Team</Link></li>
+      <li className={styles.card}><Link className= {styles.link} href="/contact">Contact</Link></li>
+    </ul>
+    </div>
+    <p className={styles.homep}>
+      This is my GitHub meta data and personal portfolio page. Having a system engineer background, 
+      I am coming from the jungle comparing to computer science coders.
+      I love to learn new things and improve my skills.
+    </p>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
+
+export default HomePage;
