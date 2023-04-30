@@ -19,8 +19,7 @@ export const metadata = {
 
 const ProjectsLayout = ({children}: ProjectsLayoutProps):JSX.Element => {
   return (
-    <div className="projects-container">
-        <h1>This is Projects Layout</h1>
+    <div className="container-fluid">
         {children}
     </div>
   )

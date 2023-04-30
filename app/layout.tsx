@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import './globals.css'
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 /**
  * Renders a RootLayout component with children
  * @param {Object} props - The props object containing the children prop
@@ -32,11 +33,13 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>
-          <Header text={''} />
-        <main className ="container">
+      <body className="container-fluid">
+        <Header text={''} />
+        <main className ="container container-fluid w-100 h-100">
           {children}
+        
         </main>
+        <Footer /> 
       </body>
     </html>
   )

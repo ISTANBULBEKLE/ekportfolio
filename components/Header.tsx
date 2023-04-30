@@ -33,7 +33,7 @@ const handleSearch: React.MouseEventHandler<HTMLButtonElement> | undefined = (e:
 }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary --bs-border-color --bs-border-color-rgb">
   <div className="container-fluid">
     <a className="navbar-brand" href="/">Ekip Kalir</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,21 +55,6 @@ const handleSearch: React.MouseEventHandler<HTMLButtonElement> | undefined = (e:
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/contact">Contact</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/about">About</a></li>
-            <li><a className="dropdown-item" href="/projects">Projects</a></li>
-            <li><a className="dropdown-item" href="/projects/team">Team</a></li>
-            <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item" href="/contact">Contact</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
         </li>
       </ul>
       <form className="d-flex" role="search">

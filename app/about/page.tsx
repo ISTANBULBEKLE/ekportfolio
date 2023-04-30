@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div className="about-container">
+    <div className="container-fluid bs-info-bg-subtle">
         <h1>Ekip Kalir</h1>
         <h2>Full Stack Engineer</h2>
         <p>

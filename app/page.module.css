@@ -1,53 +1,15 @@
 /* Component.css */
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-  background-color: #f9f9f9;
-}
 
-.card {
-  background-color: #746e6e;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  cursor: pointer;
-}
-
-.card:hover {
-  background-color: #7c7777;
-}
-
-.homeh1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.homep {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.homeul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.homeli {
-  margin-right: 1rem;
-}
-
-.link {
-  color: #333;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.link:hover {
-  color: #666;
-}
-
+.imageContainer{
+  background-color: url(/public/images/blue-background.png);
+  width: 100%;
+  height: 100%;
+  flex: 1
+  }
+  .p{ 
+    text-align: start;
+    color: rgb(15, 14, 14);
+    font-size: 20px;
+    font-weight: bold;
+  }
